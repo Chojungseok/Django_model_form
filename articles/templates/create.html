@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <!-- action이 비워져 있으면 내가 현재 위치한 곳으로 다시 간다 -->
+    <form action="" method = 'POST'> 
+        {% csrf_token %}
+        {{form}}
+        <input type="submit">
+    </form>
+{% endblock %}
